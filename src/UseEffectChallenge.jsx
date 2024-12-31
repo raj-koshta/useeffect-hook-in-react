@@ -20,7 +20,7 @@ const UseEffectChallenge = () => {
 
     useEffect(()=>{document.title = "Count: "+ count},[count])
     return (
-        <>
+        <div className='box'>
             <h1>UseEffect Hook Challenge</h1>
             <hr />
             <p style={font}>Count: {count}</p>
@@ -37,7 +37,7 @@ const UseEffectChallenge = () => {
 
             <p style={font}>Name: {name}</p>
             <input type='text' placeholder='Enter Your Name' onChange={(e)=> handleName(e)} />
-        </>
+        </div>
     )
 }
 
